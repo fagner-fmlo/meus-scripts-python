@@ -1,8 +1,8 @@
-def intel(target):
+def osint_shodan(target):
     import json
     import requests as rq
 
-    key = 't2pRa0wSFcfMz4CYUhtb85Y7mFyCvUEb'
+    key = ''
     ip = target
     url = f'https://api.shodan.io/shodan/host/{ip}?key={key}'
 
@@ -11,4 +11,4 @@ def intel(target):
 
     print(json.dumps(response, indent=4, sort_keys=True))
 
-intel('8.8.8.8')
+osint_shodan('8.8.8.8')
